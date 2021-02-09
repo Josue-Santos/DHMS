@@ -1,3 +1,5 @@
+/*HOME PAGE*/
+/*************************************************************************************************************************************/
 #top_logo{
     position: absolute;
     top:3%;
@@ -6,6 +8,14 @@
     width: 220px;
     z-index: 1;
     
+}
+.menu_button{
+    position: fixed;
+    top:70px;
+    right:5%;
+    height: 90px;
+    width: 85px;
+    z-index: 1;
 }
 
 .fa:hover {
@@ -49,7 +59,7 @@
 }
 #moving_pictures_div{
     position:relative;
-    height: 20%;
+    height: 500px;
     width: 100%;
     background-color: rgb(217, 217, 247);
 }
@@ -67,7 +77,7 @@
 #bottom_div{
     position: relative;
     width: 100%;
-    height: 190px;
+    height: 184px;
     background-color: black;
 }
 #bottom_div_top{
@@ -112,9 +122,38 @@
     text-align: center;
     
 }
+#main_page{
+    filter: blur(0);
+}
+#menu_div{
+    display: none;
+    background-color:#706c6c;
+    position: fixed;
+    top:0px;
+    height: 100%;
+    width:400px;
+    z-index: 1;
+    border-right: 5px solid white;
+}
+
+#menu_pic{
+    position: fixed;
+    height:400px;
+    width:450px;
+    left:-150px;
+    top:-120px;
+}
+.menu_options{
+    position: relative;
+    color: white;
+    font-size: 50px;
+    left:50px;
+    top:40%;
+}
 
 .slider{
 	width: 100%;
+    height: 500px;
 	position: relative;
 	overflow: hidden;
 }
@@ -181,9 +220,50 @@ font-size: 30px;
 	display: block;
 }
 
+/*ABOUT ME PAGE*/
+/*************************************************************************************************************************************/
 
+#about_firstline{
+    position:absolute;
+    top:45px;
+    left: 250px;
+    width: 500px;
+}
+#about_secondline{
+    position:absolute;
+    top:45px;
+    right:0px;
+    width: 500px;
+}
+#about_h1{
+    color:white;
+    position:absolute;
+    top:45px;
+    left: 800px;
+    width: 500px;
 
-
+}
+#about_main_picture{
+    position:absolute;
+    top:230px;
+    left:280px;
+    width:350px;
+    height: 200px;
+}
+#about_text{
+    position: absolute;
+    right:200px;
+    top:140px;
+    color: white;
+    font-size:x-large;
+}
+#about_name{
+    position:absolute;
+    color: black;
+    font-size:xx-large;
+    top:470px;
+    left:370px;
+}
 
 
 
