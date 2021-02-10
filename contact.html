@@ -4,6 +4,7 @@
 
   <head>
     <title>Denis' Handyman Services</title>
+    <meta name="viewport" content="width=device-width,initial-scale= 1" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="static/styles.css" rel="stylesheet">
@@ -18,7 +19,26 @@
         </button>
         <img id=about_firstline src="pictures/about/line.png" alt="line">
         <h1 id="about_h1">Contact</h1>
-        <img id=about_secondline src="pictures/about/line.png" alt="line">    
+        <img id=about_secondline src="pictures/about/line.png" alt="line"> 
+        <div id="contact_form_div">
+          <form  action="mailto:josuesantosfls@gmail.com" method="post" enctype="text/plain">
+            <input id="contact_form_div_name" name="name"type="text" placeholder="Your Name">
+            <input id="contact_form_div_email" name="email"type="text" placeholder="Your Email">
+            <textarea id="contact_form_div_textarea" name="info" rows="4" cols="50"placeholder="Your message here. We will contact you as soon as possible, thank you."></textarea>
+            <button id="contact_form_div_submit" type="submit">Send</button>
+          </form>
+        </div>   
+        <div id="contact_info_div">
+          <img id="contact_info_div_location" src="pictures/contact/location.png" alt="location.png">
+          <h3 id="contact_info_div_location_heading">Orlando, FL</h3>
+          <img id="contact_info_div_phone"src="pictures/contact/phone.png" alt="phone.png">
+          <h3 id="contact_info_div_phone_heading">407-300-4964</h3>
+          <img id="contact_info_div_email"src="pictures/contact/email.png" alt="email.png">
+          <h3 id="contact_info_div_email_heading">dhmsorlando@gmail.com</h3>
+          <div id ="contact_info_div_line"></div>
+          <a id="contact_facebook_icon" href="https://www.facebook.com" class="fa fa-facebook"></a>
+          <a id="contact_instagram_icon" href="https://www.instagram.com" class="fa fa-instagram"></a>
+        </div>
 
     </div>
 
