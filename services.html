@@ -9,10 +9,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="static/styles.css" rel="stylesheet">
     <script src="js/menu.js"></script>
+    <style>
+      body {
+        background-image: url('pictures/about/background_image.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+      }
+      </style>
   </head>
 
-  <body style="background-image: url('pictures/about/background_image.png');">
+  <body>
     <div id="main_page">
+        <div id=services_topdiv>
+          <h1 id=topdiv_h1>Call Now: 407-300-4964</h1>
+        </div>
         <img id="top_logo" src="pictures/home/cleaned_logo.png" alt="DHMS_logo">
         <button type="button" class="menu_button" onclick="menu()">
             <img src="pictures/home/menu.png" alt="menu" class="menu_button">
@@ -21,15 +32,7 @@
         <h1 id="about_h1">Services</h1>
         <img id=about_secondline src="pictures/about/line.png" alt="line"> 
         
-        <div id="services_further">
-          <h2>For further<br>
-            information or<br>
-            inquiries feel free <br>
-            to reach out!
-          </h2>
-          <img id="services_phone_image" src="pictures/services/phone_circle.png" alt="phone_circle.png">
-          <h2 id="services_phone_number">407-300-4964</h2>
-        </div>
+        
         <div id="services_list1">
           <ul>
             <li>Cabinet Installation</li>
@@ -60,6 +63,15 @@
             <li>Grout</li>
             <li>AND MORE!!!!</li>
           </ul>
+        </div>
+        <div id="services_further">
+          <h2>For further<br>
+            information or<br>
+            inquiries feel free <br>
+            to reach out!
+          </h2>
+          <img id="services_phone_image" src="pictures/services/phone_circle.png" alt="phone_circle.png">
+          <h2 id="services_phone_number">407-300-4964</h2>
         </div>
     </div>
 

@@ -195,10 +195,7 @@
 @keyframes zoom{
     0%{transform: scale(2);opacity: 0}
     50%{transform: scale(1.5);opacity:0.5}
-    100%{transform: scale(1);opacity:1}
-
-	
-	
+    100%{transform: scale(1);opacity:1}	
 }
 .slider .slider-items .item{
 	display: none;
@@ -224,54 +221,70 @@ font-size: 30px;
 
 /*ABOUT ME PAGE*/
 /*************************************************************************************************************************************/
-
+#about_topdiv{
+    display: none;
+    position:relative;
+    top:0px;
+    height:70px;
+    width: 100%;
+    background-color: #706c6c;
+    text-align: center;
+    padding: 10px;
+}
 #about_firstline{
-    position:absolute;
+    position:relative;
     top:45px;
     left: 250px;
     width: 500px;
 }
 #about_secondline{
-    position:absolute;
-    top:45px;
-    right:0px;
+    position:relative;
+    left:1000px;
+    top:-45px;
     width: 500px;
 }
 #about_h1{
     color:white;
-    position:absolute;
-    top:45px;
+    position:relative;
     left: 800px;
     width: 500px;
 
 }
 #about_main_picture{
-    position:absolute;
-    top:190px;
-    left:280px;
+    position:fixed;
+    top:50%;
+    left:50%;
     width:350px;
     height: 200px;
+    transform: translate(-50%, -50%);
 }
 #about_text{
-    position: absolute;
-    right:200px;
-    top:180px;
+    position: relative;
+    left: 50%;
+    top:400px;
     color: white;
     font-size:x-large;
+    transform: translate(-50%, -50%);
+    padding: 70px;
+    
 }
 #about_name{
-    position:absolute;
+    position:relative;
     color: black;
     font-size:xx-large;
-    top:470px;
-    left:370px;
+    top:250px;
+    left:45%;
+    
 }
 /*SERVICES PAGE*/
 /*************************************************************************************************************************************/
+#services_topdiv{
+    display: none;
+}
 #services_further{
     color:black;
     position:relative;
-    top: 300px;
+    top: 160px;
     left: 50px;
     font-size: x-large;
     line-height:1in;
@@ -304,6 +317,11 @@ font-size: 30px;
     color: white;
     font-size: x-large;
     font-family: sans-serif;
+}
+/*GALLERY PAGE*/
+/*************************************************************************************************************************************/
+#gallery_topdiv{
+    display: none;
 }
 /*CONTACT PAGE*/
 /*************************************************************************************************************************************/
@@ -421,13 +439,12 @@ font-size: 30px;
     /*HOME PAGE*/
 /*************************************************************************************************************************************/
     #top_logo{
-        position: absolute;
-        top:7%;
+        position:fixed;
+        top:80px;
         left:2%;
         height:100px;
         width: 100px;
         z-index: 1;
-        
     }
 
     .menu_button{
@@ -476,6 +493,14 @@ font-size: 30px;
         color: black;
         font-size: xx-large;
         text-align:center;
+    }
+    .menu_button{
+        position: fixed;
+        top:100px;
+        right:5%;
+        height: 90px;
+        width: 85px;
+        z-index: 1;
     }
     #moving_pictures_div{
         position:relative;
@@ -548,23 +573,23 @@ font-size: 30px;
         position: fixed;
         top:0px;
         height: 100%;
-        width:400px;
+        width:150px;
         z-index: 1;
-        border-right: 5px solid white;
+        border-right: 3px solid white;
     }
 
     #menu_pic{
         position: fixed;
-        height:400px;
-        width:450px;
-        left:-150px;
-        top:-120px;
+        height:250px;
+        width:300px;
+        left:-110px;
+        top:-80px;
     }
     .menu_options{
         position: relative;
         color: white;
-        font-size: 50px;
-        left:50px;
+        font-size: 25px;
+        left:20px;
         top:40%;
     }
 
@@ -636,59 +661,251 @@ font-size: 30px;
     .slider .slider-items .item.active{
         display: block;
     }
+    /*ABOUT ME PAGE*/
+    /*************************************************************************************************************************************/
+    #main_page{
+        width: 100%;
+    }
+    #about_topdiv{
+        display: block;
+        position:relative;
+        top:0px;
+        height:100px;
+        width: 100%;
+        background-color: #706c6c;
+        text-align: center;
+        padding: 10px;
+    }
+    #about_firstline{
+        display: none;
+    }
+    #about_secondline{
+        display:none;
+    }
+    #about_h1{
+        color:white;
+        position:relative;
+        top:90px;
+        left: 70px;
+        width: 500px;
+    }
+    #about_main_picture{
+        position:relative;
+        top:220px;
+        left:200px;
+        width:300px;
+        height: 200px;
+    }
+    #about_name{
+        position:relative;
+        color: black;
+        font-size:xx-large;
+        top:130px;
+        left:90px;
+    }
+    #about_text{
+        position: relative;
+        left:200px;
+        top:430px;
+        color: white;
+        font-size: 20px;
+        width:375px;
+        padding: 20px;
+    }
+    #menu_div{
+        display: none;
+        background-color:#706c6c;
+        position: fixed;
+        top:0px;
+        height: 100%;
+        width:150px;
+        z-index: 1;
+        border-right: 3px solid white;
+    }
 
-        
+    #menu_pic{
+        position: fixed;
+        height:250px;
+        width:300px;
+        left:-110px;
+        top:-80px;
+    }
+    .menu_options{
+        position: relative;
+        color: white;
+        font-size: 25px;
+        left:20px;
+        top:300px;
+    }
+    /*SERVICES PAGE*/
+    /*************************************************************************************************************************************/
+    #services_topdiv{
+        display: block;
+        position:relative;
+        top:0px;
+        height:100px;
+        width: 100%;
+        background-color: #706c6c;
+        text-align: center;
+        padding: 10px;
+    }
+    #services_h1{
+        color:white;
+        position:relative;
+        top:90px;
+        left: 70px;
+        width: 500px;
+
+    }
+    #services_further{
+        color:black;
+        position:relative;
+        top:110px;
+        left: 50px;
+        font-size: x-large;
+        line-height:1in;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #services_phone_image{
+        position: absolute;
+        height: 100px;
+        width: 370px;
+        top:200px;
+        left: -50px;
+    }
+    #services_phone_number{
+        position:absolute;
+        z-index: 1;
+        top:230px;
+        left: 25px;
+        color: white;
+    }
+    #services_list1{
+        top: 100px;
+        position: relative;
+        left: 15%;
+        color: white;
+        font-size: x-large;
+        font-family: sans-serif;
+    }
+    #services_list2{
+        position: relative;
+        left: 15%;
+        top:100px;
+        color: white;
+        font-size: x-large;
+        font-family: sans-serif;
+    }
+    /*GALLERY PAGE*/
+/*************************************************************************************************************************************/
+    #gallery_topdiv{
+        display: block;
+        position:relative;
+        top:0px;
+        height:100px;
+        width: 100%;
+        background-color: #706c6c;
+        text-align: center;
+        padding: 10px;
+    }
 }
 /****************************************************************************/
-/*IN BETWEEN SCREEN*/
+/*IN BETWEEN SCREEN ABOUT,SERVICES PAGE*/
 @media only screen and (max-width:1427px){
     
-    #bottom_div{
-        position: relative;
+    #about_topdiv{
+        display: block;
+        position:relative;
+        top:0px;
+        height:100px;
         width: 100%;
-        height:320px;
-        background-color: black;
-    }
-    #bottom_div_top{
-        position: relative;
-        left: 50%;
-        top:20%;
-        width: 80%;
-        height: 100px; 
-        background-color: rgb(0, 0, 0);
-        border:4px solid rgb(206, 200, 200);
-        transform: translate(-50%, -50%);
-    }
-    #bottom_div_top_text{
-        color:#559b37;
-        font-size: 25px;
+        background-color: #706c6c;
         text-align: center;
-        font-family:Georgia, 'Times New Roman', Times, serif;
+        padding: 10px;
     }
+    #about_firstline{
+        display: none;
+    }
+    #about_secondline{
+        display:none;
+    }
+    #about_h1{
+        color:white;
+        position:relative;
+        top:90px;
+        left: 70px;
+        width: 500px;
 
-    #bottom_div_top_center{
+    }
+    #about_main_picture{
+        position:relative;
+        top:220px;
+        left:200px;
+        width:300px;
+        height: 200px;
+    }
+    #about_name{
+        position:relative;
+        color: black;
+        font-size:xx-large;
+        top:130px;
+        left:90px;
+    }
+    #about_text{
         position: relative;
-        left: 50%;
-        top:50%;
-        width: 95%;
-        height:70%; 
-        background-color: rgb(255, 255, 255);
-        transform: translate(-50%, -50%);
+        left:200px;
+        top:430px;
+        color: white;
+        font-size: 20px;
+        width:375px;
+        padding: 20px;
     }
+   /*SERVICES ****************************************************************8*/
+   #services_topdiv{
+    display: block;
+    position:relative;
+    top:0px;
+    height:100px;
+    width: 100%;
+    background-color: #706c6c;
+    text-align: center;
+    padding: 10px;
+    }
+    #about_firstline{
+        display: none;
+    }
+    #about_secondline{
+        display:none;
+    }
+    #about_h1{
+        color:white;
+        position:relative;
+        top:90px;
+        left: 70px;
+        width: 500px;
 
-    #bottom_div_bottom{
+    } #services_further{
+        color:black;
+        position:relative;
+        top:110px;
+        left: 50px;
+        font-size: x-large;
+        line-height:1in;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #services_phone_image{
         position: relative;
-        left: 50%;
-        top:35%;
-        width:75%;
-        height: 40%; 
-        transform: translate(-50%, -50%);
+        height: 100px;
+        width: 370px;
+        top:90px;
+        left: -50px;
     }
-
-    #bottom_div_bottom_text{
-        color: #7ed957;
-        font-size: 25px;
-        text-align: center;
-        
+    #services_phone_number{
+        position:relative;
+        z-index: 1;
+        top:25px;
+        left: 25px;
+        color: white;
     }
+    
 }
