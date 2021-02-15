@@ -125,7 +125,7 @@
 }
 #main_page{
     filter: blur(0);
-    width: 100%;
+    
 }
 #menu_div{
     display: none;
@@ -247,7 +247,6 @@ font-size: 30px;
     color:white;
     position:relative;
     left: 800px;
-    width: 500px;
 
 }
 #about_main_picture{
@@ -716,7 +715,7 @@ font-size: 30px;
         position:relative;
         top:90px;
         left: 70px;
-        width: 500px;
+        width: 190px;
     }
     #about_main_picture{
         position:relative;
@@ -731,6 +730,7 @@ font-size: 30px;
         font-size:xx-large;
         top:130px;
         left:90px;
+        width: 200px;
     }
     #about_text{
         position: relative;
@@ -778,14 +778,7 @@ font-size: 30px;
         text-align: center;
         padding: 10px;
     }
-    #services_h1{
-        color:white;
-        position:relative;
-        top:90px;
-        left: 70px;
-        width: 500px;
-
-    }
+   
     #services_further{
         color:black;
         position:relative;
@@ -793,6 +786,7 @@ font-size: 30px;
         left: 50px;
         font-size: x-large;
         line-height:1in;
+        width: 300px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     #services_phone_image{
@@ -813,6 +807,7 @@ font-size: 30px;
         top: 100px;
         position: relative;
         left: 15%;
+        width: 300px;
         color: white;
         font-size: x-large;
         font-family: sans-serif;
@@ -820,6 +815,7 @@ font-size: 30px;
     #services_list2{
         position: relative;
         left: 15%;
+        width: 300px;
         top:100px;
         color: white;
         font-size: x-large;
@@ -868,6 +864,7 @@ font-size: 30px;
     #contact_info_div{
         position: relative;
         left: 30px;
+        width: 300px;
     }
     #contact_info_div_email_heading{
         font-size: 20px;
@@ -888,13 +885,12 @@ font-size: 30px;
 /*************************************************************************************************************************************/
     #gallery_topdiv{
         display: block;
-        position:relative;
-        top:0px;
         height:100px;
         width: 100%;
         background-color: #706c6c;
         text-align: center;
         padding: 10px;
+
     }
 }
 /****************************************************************************/
@@ -903,13 +899,12 @@ font-size: 30px;
     
     #about_topdiv{
         display: block;
-        position:relative;
-        top:0px;
         height:100px;
         width: 100%;
         background-color: #706c6c;
         text-align: center;
         padding: 10px;
+
     }
     #about_firstline{
         display: none;
@@ -922,7 +917,6 @@ font-size: 30px;
         position:relative;
         top:90px;
         left: 70px;
-        width: 500px;
 
     }
     #about_main_picture{
@@ -965,14 +959,8 @@ font-size: 30px;
     #about_secondline{
         display:none;
     }
-    #about_h1{
-        color:white;
-        position:relative;
-        top:90px;
-        left: 70px;
-        width: 500px;
-
-    } #services_further{
+   
+    #services_further{
         color:black;
         position:relative;
         top:110px;
