@@ -127,30 +127,40 @@
     filter: blur(0);
     
 }
-#menu_div{
-    display: none;
+#menu_div {
     background-color:#706c6c;
     position: fixed;
     top:0px;
     height: 100%;
-    width:400px;
+    width:0;
     z-index: 1;
     border-right: 5px solid white;
+    transition: 0.8s;
+}
+#closebtn{
+    position: absolute;
+    color:white;
+    left:340px;
+    top:10px;
+    font-size:0;
+    transition:1.5s;
 }
 
-#menu_pic{
+#menu_pic {
     position: fixed;
     height:400px;
-    width:450px;
+    width:0;
     left:-150px;
     top:-120px;
+    transition: 0.8s;
 }
 .menu_options{
     position: relative;
     color: white;
-    font-size: 50px;
+    font-size: 0;
     left:50px;
     top:40%;
+    transition:0.5s;
 }
 
 .slider{
@@ -596,12 +606,11 @@ font-size: 30px;
         width: 100%;
     }
     #menu_div{
-        display: none;
         background-color:#706c6c;
         position: fixed;
         top:0px;
         height: 100%;
-        width:150px;
+        width:0;
         z-index: 1;
         border-right: 3px solid white;
     }
@@ -609,14 +618,14 @@ font-size: 30px;
     #menu_pic{
         position: fixed;
         height:250px;
-        width:300px;
+        width:0;
         left:-110px;
         top:-80px;
     }
     .menu_options{
         position: relative;
         color: white;
-        font-size: 25px;
+        font-size: 0;
         left:20px;
         top:40%;
     }
@@ -741,31 +750,7 @@ font-size: 30px;
         width:375px;
         padding: 20px;
     }
-    #menu_div{
-        display: none;
-        background-color:#706c6c;
-        position: fixed;
-        top:0px;
-        height: 100%;
-        width:150px;
-        z-index: 1;
-        border-right: 3px solid white;
-    }
-
-    #menu_pic{
-        position: fixed;
-        height:250px;
-        width:300px;
-        left:-110px;
-        top:-80px;
-    }
-    .menu_options{
-        position: relative;
-        color: white;
-        font-size: 25px;
-        left:20px;
-        top:300px;
-    }
+   
     /*SERVICES PAGE*/
     /*************************************************************************************************************************************/
     #services_topdiv{
