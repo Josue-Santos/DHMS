@@ -280,7 +280,7 @@ font-size: 30px;
     #moving_pictures_div{
         position:relative;
         height: 400px;
-        width: "device-width";
+        width: 100%;
         background-color: rgb(217, 217, 247);
     }
     .item{
@@ -353,7 +353,7 @@ font-size: 30px;
         color: white;
         font-size: 0;
         left:20px;
-        top:50%;
+        top:40%;
     }
 
     .slider{
@@ -609,7 +609,7 @@ font-size: 30px;
     position:relative;
     top: 70px;
     left: 50px;
-    width: 200px;
+    width: 250px;
     font-size: x-large;
     line-height:1in;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -617,7 +617,7 @@ font-size: 30px;
 #services_phone_image{
     position: absolute;
     height: 100px;
-    width: 250px;
+    width: 370px;
     top:290px;
     left: -50px;
 }
@@ -825,9 +825,10 @@ font-size: 30px;
     #services_h1{
         color:white;
         position:relative;
-        top:100px;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top:110px;
+        width:150px;
+        left: 35%;
+      
      }
      #services_list1{
         top: 340px;
@@ -839,14 +840,28 @@ font-size: 30px;
     #services_further{
         color:black;
         position:relative;
-        top:280px;
-        left: 40%;
+        top:290px;
+        left: 50%;
         width: 250px;
-        font-size:5px;
+        font-size:large;
         line-height:1in;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        transform: translate(-50%, -50%);
-
+    }
+    #services_phone_image{
+        position: relative;
+        height: 100px;
+        width: 300px;
+        top:50px;
+        left: -45px;
+    }
+    #services_phone_number{
+        position:relative;
+        z-index: 1;
+        top:-15px;
+        left: 25px;
+        font-size: x-large;
+        width: 200px;
+        color: white;
     }
     
 }
@@ -855,8 +870,12 @@ font-size: 30px;
 /*GALLERY PAGE*/
 /*************************************************************************************************************************************/
 #gallery_topdiv{
-    display: none;
-   
+    display: block;
+    height:100px;
+    width: 100%;
+    background-color: #706c6c;
+    text-align: center;
+    padding: 10px;
 }
 #gallery_div{
     position: relative;
@@ -874,6 +893,7 @@ font-size: 30px;
     height: 340px;
     flex-basis: 100%;
 }
+
 @media only screen and (min-width:640px){
     .gallery_img{
         flex-basis: 30%;
@@ -883,43 +903,64 @@ font-size: 30px;
     }
 
 }
+
 /*CONTACT PAGE*/
 /*************************************************************************************************************************************/
 #contact_topdiv{
-    display: none;
+    display: block;
+    position:relative;
+    top:0px;
+    height:100px;
+    width: 100%;
+    background-color: #706c6c;
+    text-align: center;
+    padding: 10px;
 }
 #contact_form_div{
-    position:absolute;
-    top: 20px;
+    position:relative;
+    top: 70px;
+    width: 450px;
+    height: 500px;
     left:20%;
+
 }
 #contact_form_div_name{
+    position: relative;
     width: 400px;
     height: 40px;
     border-radius: 10px;
     text-align: left;
     padding: 10px;
     font-size: large;
+    left:50%;
+    top: 50px;
+    transform: translate(-50%, -50%);
+  
 }
 
 #contact_form_div_email{
     position: relative;
-    top:75px;
-    left:-403px;
     width: 400px;
     height: 40px;
     border-radius: 10px;
     text-align: left;
     padding: 10px;
     font-size: large;
+    left:50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
 }
 #contact_form_div_textarea{
     position: relative;
-    top:320px;
     width: 400px;
     height: 200px;
-    left:-803px;
     border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    font-size: large;
+    left:50%;
+    top: 230px;
+    transform: translate(-50%, -50%);
     color:gray;
 }
 #contact_form_div_submit{
@@ -929,18 +970,19 @@ font-size: 30px;
     font-size: x-large;
     height:50px;
     width: 250px;
-    top:340px;
-    left:80px;
+    top:180px;
+    left:50%;
     border-radius: 10px;
     background-color: gray;
     border:1px solid white;
+    transform: translate(-50%, -50%);
 }
 #contact_info_div{
     position: relative;
     color:white;
     height: 500px;
     width: 400px;
-    top:200px;
+    top: -380px;
     left:60%;
 }
 #contact_info_div_location{
@@ -996,61 +1038,87 @@ font-size: 30px;
     margin: 5px 2px;
     left:90%;
 }
-
-/*Mobile Styling!*/
-@media only screen and (max-width:812px){
-
-   
-   /*CONTACT PAGE*/
-/*************************************************************************************************************************************/
-    #contact_topdiv{
-        display: block;
-        position:relative;
-        top:0px;
-        height:100px;
-        width: 100%;
-        background-color: #706c6c;
-        text-align: center;
-        padding: 10px;
-    }
+@media only screen and (max-width:1200px){
     #contact_form_div{
         position: relative;
-        top: 120px;
-    }
-    #contact_form_div_name{
-        position: relative;
-        width: 300px;
-        left: -30px;
-        top:-10px;
-    }
-    #contact_form_div_email{
-        position: relative;
-        width: 300px;
-        left: -30px;
-        top: 20px;
-    }
-    #contact_form_div_textarea{
-        position: relative;
-        width: 300px;
-        left: -30px;
-        top: 50px;
-    }
-    #contact_form_div_submit{
-        position: relative;
-        width: 300px;
-        left: -30px;
-        top: 70px;
+        left: 50%;
+        top: 330px;
+        transform: translate(-50%, -50%);
     }
     #contact_info_div{
         position: relative;
-        left: 30px;
+        left: 45%;
+        top:380px;
         width: 300px;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+@media only screen and (max-width:812px){
+
+    
+    #contact_form_div{
+        position:relative;
+        top: 380px;
+        width: 100%;
+        height: 500px;
+        left:50%;
+
+    }
+    #contact_form_div_name{
+        width: 350px;
+        left:50%;
+    }
+    #contact_form_div_email{
+        position: relative;
+        width: 350px;
+        height: 40px;
+        border-radius: 10px;
+        text-align: left;
+        padding: 10px;
+        font-size: large;
+        left:50%;
+        top: 100px;
+        
+
+    }
+    #contact_form_div_textarea{
+        width: 350px;
+        left:50%;
+        top: 230px;
+
+    }
+    
+    #contact_form_div_submit{
+        position: relative;
+        width: 250px;
+        left: 50%;
+        top: 180px;
+        transform: translate(-50%, -50%);
+
+    }
+    #contact_info_div{
+        position: relative;
+        left: 50%;
+        top:380px;
+        width: 100%;
+     
     }
     #contact_info_div_email_heading{
         font-size: 20px;
+        width: auto;
+    }
+    #contact_info_div_location_heading{
+        font-size: 20px;
+        width: auto;
+    }
+    #contact_info_div_phone_heading{
+        font-size: 20px;
+        width: auto;
     }
     #contact_info_div_line{
-        width: 320px;
+        width:300px;
     }
     #contact_facebook_icon{
         position: relative;
@@ -1061,15 +1129,5 @@ font-size: 30px;
         left: 230px;
 
     }
-    /*GALLERY PAGE*/
-/*************************************************************************************************************************************/
-    #gallery_topdiv{
-        display: block;
-        height:100px;
-        width: 100%;
-        background-color: #706c6c;
-        text-align: center;
-        padding: 10px;
-
-    }
+   
 }
