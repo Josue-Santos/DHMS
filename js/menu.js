@@ -36,3 +36,31 @@ function closeMenu(){
     }
 
 }
+
+/*document.getElementById("contact_form").addEventListener("submit",submitForm);
+
+function submitForm(e){
+    e.preventDefault();
+
+    let name = document.getElementById("contact_form_div_name").value;
+    let email = document.getElementById("contact_form_div_email").value;
+    let message = document.getElementById("contact_form_div_textarea").value;
+
+    //document.getElementById("contact_form").reset();
+
+    sendEmail(name,email,message);
+}
+
+function sendEmail(name,email,message){
+    Email.send({
+        Host:"smtp.gmail.com",
+        Username:'josuesantosfls@gmail.com',
+        Password:"kbkcogrxjzwqkgyc",
+        To: 'josuesantosfls@gmail.com',
+        From:'josuesantosfls@gmail.com',
+        Subject:`${name} sent you a message`,
+        Body:`Name: ${name} <br/> Email: ${email} <br/> Message : ${message}`,
+    }).then((message)=>alert("Mail Sent Successfully"));
+}
+*/
+
