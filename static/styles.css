@@ -915,7 +915,7 @@ font-size: 30px;
     background-color: #706c6c;
     text-align: center;
     padding: 10px;
-    border:2px black solid;
+
 }
 #contact_form_div{
     position:relative;
@@ -923,7 +923,7 @@ font-size: 30px;
     width: 450px;
     height: 500px;
     left:20%;
-    border:2px black solid;
+   
 
 }
 #contact_form_div_name{
@@ -937,8 +937,7 @@ font-size: 30px;
     left:50%;
     top: 50px;
     transform: translate(-50%, -50%);
-    border:2px black solid;
-  
+      
 }
 
 #contact_form_div_email{
@@ -952,7 +951,7 @@ font-size: 30px;
     left:50%;
     top: 100px;
     transform: translate(-50%, -50%);
-    border:2px black solid;
+
 }
 #contact_form_div_textarea{
     position: relative;
@@ -966,7 +965,7 @@ font-size: 30px;
     top: 230px;
     transform: translate(-50%, -50%);
     color:gray;
-    border:2px black solid;
+ 
 }
 #contact_form_div_submit{
     
@@ -981,7 +980,7 @@ font-size: 30px;
     background-color: gray;
     border:1px solid white;
     transform: translate(-50%, -50%);
-    border:2px black solid;
+
 }
 #contact_info_div{
     position: relative;
@@ -990,30 +989,30 @@ font-size: 30px;
     width: 400px;
     top: -380px;
     left:60%;
-    border:2px black solid;
+
 }
 #contact_info_div_location{
     position:relative;
     height: 80px;
     width: 80px;
-    border:2px black solid;
+
 }
 #contact_info_div_location_heading{
     position: relative;
     top:-50px;
     left:90px;
-    border:2px black solid;
+
 }
 #contact_info_div_phone{
     position:relative;
     height: 80px;
     width: 80px;
-    border:2px black solid;
+
 }#contact_info_div_phone_heading{
     position: relative;
     top:-50px;
     left:90px;
-    border:2px black solid;
+    
 }
 #contact_info_div_email{
     position:relative;
@@ -1023,7 +1022,7 @@ font-size: 30px;
     position: relative;
     top:-50px;
     left:90px;
-    border:2px black solid;
+    
 }
 #contact_info_div_line{
     position: relative;
@@ -1031,7 +1030,7 @@ font-size: 30px;
     height: 1.5px;
     width: 500px;
     top:-30px;
-    border:2px black solid;
+   
 }
 #contact_facebook_icon{
     position: relative;
@@ -1041,7 +1040,7 @@ font-size: 30px;
     padding: 5px;
     margin: 5px 2px;
     left: 85%;
-    border:2px black solid;
+   
 }
 #contact_instagram_icon{
     position: relative;
@@ -1051,7 +1050,7 @@ font-size: 30px;
     padding: 5px;
     margin: 5px 2px;
     left:90%;
-    border:2px black solid;
+   
 }
 @media only screen and (max-width:1200px){
     #contact_form_div{
