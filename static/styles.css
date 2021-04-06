@@ -534,7 +534,7 @@ font-size: 30px;
     #about_text{
         position: relative;
         left:50%;
-        top:350px;
+        top:500px;
         color: white;
         font-size: 20px;
         width:90vw;
@@ -546,7 +546,7 @@ font-size: 30px;
     #about_text{
         position: relative;
         left:50%;
-        top:400px;
+        top:700px;
         color: white;
         font-size: 20px;
         width:90vw;
@@ -558,7 +558,7 @@ font-size: 30px;
     #about_text{
         position: relative;
         left:50%;
-        top:500px;
+        top:700px;
         color: white;
         font-size: 20px;
         width:90vw;
