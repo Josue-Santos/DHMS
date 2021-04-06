@@ -516,8 +516,8 @@ font-size: 30px;
     }
     #about_main_picture{
         position:relative;
-        top:220px;
-        left:50%;
+        top:250px;
+        left:55%;
         width:300px;
         height: 200px;
         transform: translate(-50%, -50%);
@@ -534,7 +534,7 @@ font-size: 30px;
     #about_text{
         position: relative;
         left:50%;
-        top:300px;
+        top:350px;
         color: white;
         font-size: 20px;
         width:90vw;
@@ -558,7 +558,7 @@ font-size: 30px;
     #about_text{
         position: relative;
         left:50%;
-        top:450px;
+        top:500px;
         color: white;
         font-size: 20px;
         width:90vw;
